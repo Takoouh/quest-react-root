@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <NavLink exact to="/">
+          <NavLink activeClassName="selected" exact to="/">
             {" "}
             Accueil{" "}
           </NavLink>
@@ -18,7 +18,10 @@ class App extends Component {
             {" "}
             Histoire{" "}
           </NavLink>
-          <NavLink to="/page-de-produit"> Product </NavLink>
+          <NavLink activeClassName="selected" to="/page-de-produit">
+            {" "}
+            Product{" "}
+          </NavLink>
 
           <Switch>
             <Route exact path="/" component={Home} />
